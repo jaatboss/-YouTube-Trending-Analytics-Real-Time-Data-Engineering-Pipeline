@@ -150,7 +150,7 @@ The Streamlit app visualizes **Gold-layer analytics**:
 
 ## 🚀 How to Run the Project (Local Setup)
 
-### 1 Prerequisites
+### 1. Prerequisites
 
 Install once:
 
@@ -169,7 +169,7 @@ java -version
 
 ---
 
-### 2 Virtual Environments
+### 2. Virtual Environments
 
 Each component runs in an isolated venv.
 
@@ -203,7 +203,7 @@ deactivate
 ---
 
 
-### 3 Start Streaming Pipeline
+### 3. Start Streaming Pipeline
 
 ```bash
 ./start_pipeline.sh
@@ -218,7 +218,7 @@ This starts:
 
 ---
 
-### 4 Run Airflow (Batch Processing)
+### 4. Run Airflow (Batch Processing)
 
 ```bash
 source airflow-venv/bin/activate
@@ -235,7 +235,7 @@ yt_master_pipeline
 
 ---
 
-### 5 Run Streamlit Dashboard
+### 5. Run Streamlit Dashboard
 
 ```bash
 source streamlit-venv/bin/activate
@@ -250,7 +250,7 @@ http://localhost:8501
 
 ---
 
-## 🚫 6 Data & Logs (Not Tracked in Git)
+## 🚫 6. Data & Logs (Not Tracked in Git)
 ```
 The following are **generated at runtime** and excluded via `.gitignore`:
 
@@ -263,7 +263,7 @@ The following are **generated at runtime** and excluded via `.gitignore`:
 
 ---
 
-## 6 Key Highlights
+## 7. Key Highlights
 ```
 - Real-time streaming with Kafka & Spark
 - Medallion architecture using Delta Lake
@@ -274,7 +274,7 @@ The following are **generated at runtime** and excluded via `.gitignore`:
 
 ---
 
-## Future Enhancements
+## 8. Future Enhancements
 ```
 - Deploy on cloud (AWS / GCP)
 - Add data quality checks
