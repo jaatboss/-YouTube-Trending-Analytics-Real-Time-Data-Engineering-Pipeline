@@ -50,7 +50,7 @@ The pipeline follows a **Medallion Architecture (Bronze → Silver → Gold)**:
 5. **Apache Airflow** orchestrates batch workflows
 6. **Streamlit Dashboard** reads Gold tables for analytics
 
-![Architecture Diagram](docs/pipeline_architecture.png)
+![Architecture Diagram](pipeline_architecture.png)
 
 ---
 
