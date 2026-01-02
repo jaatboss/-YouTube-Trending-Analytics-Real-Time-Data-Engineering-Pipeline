@@ -248,7 +248,9 @@ Open:
 http://localhost:8501
 ```
 
-## 🚫 Data & Logs (Not Tracked in Git)
+---
+
+## 🚫 6 Data & Logs (Not Tracked in Git)
 ```
 The following are **generated at runtime** and excluded via `.gitignore`:
 
@@ -259,6 +261,8 @@ The following are **generated at runtime** and excluded via `.gitignore`:
 * Secrets & API keys
 ```
 
+---
+
 ## 6 Key Highlights
 ```
 - Real-time streaming with Kafka & Spark
@@ -268,6 +272,7 @@ The following are **generated at runtime** and excluded via `.gitignore`:
 - Analytics dashboard built with Streamlit
 ```
 
+---
 
 ## Future Enhancements
 ```
@@ -277,6 +282,7 @@ The following are **generated at runtime** and excluded via `.gitignore`:
 - Alerting and monitoring
 ```
 
+---
 ## 👤 Author
 
 **Suresh Kumar**
