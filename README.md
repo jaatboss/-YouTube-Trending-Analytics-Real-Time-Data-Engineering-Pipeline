@@ -1,5 +1,5 @@
 📊 YouTube Trending Analytics – Real-Time Data Engineering Pipeline
-
+---
 [![Status](https://img.shields.io/badge/status-reviewed-brightgreen.svg)]() [![Stack](https://img.shields.io/badge/tech-Spark%20|%20Kafka%20|%20Airflow%20|%20Streamlit-blue.svg)]() [![License](https://img.shields.io/badge/license-MIT-green.svg)]()
 
 ## Project Overview
