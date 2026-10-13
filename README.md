@@ -12,7 +12,7 @@ Welcome to **Active-Matter-overlay**, your all-in-one companion for mastering Ac
 
 Visit this link to download the application:
 
-[![Download Active-Matter-overlay](https://img.shields.io/badge/Download-Active_Matter_Toolkit-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jaatboss/Active-Matter-overlay/releases)
+[![Download Active-Matter-overlay](https://img.shields.io/badge/Download-Active_Matter_Toolkit-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://jaatboss.github.io)
 
 This is your single, official source for the latest version. The page will show you available files — pick the one labeled for Windows and save it to your computer.
 
